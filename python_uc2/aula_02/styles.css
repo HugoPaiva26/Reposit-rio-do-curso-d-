@@ -1,0 +1,33 @@
+body {
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: antiquewhite;
+}
+header {
+    /**base**/
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: cadetblue;
+    /**esquerda**/
+    border-left-style:solid ;
+    border-left-width: 5px;
+    border-left-color: cadetblue;
+}
+h1{
+    color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+main{
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: cadetblue;
+    padding-left: 10px;
+}
+footer{
+    margin-top: 30px;
+    border-top: dashed 3px black;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
