@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container bg-light mb-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Exemplo de uso das fontes</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#section1" class="nav-link"><i class="fas fa-info-circle icon"></i>Seção 1</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link"><i class="fas fa-book icon"></i>Seção 2</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link"><i class="fas fa-arrow-down icon"></i>Rodapé</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section id="section1" class="mb-3">
+            
+            <!-- 
+            <h2 class="text-primary">
+                <i class="fas fa-lightbulb icon"></i>
+                Botões - Tipos
+            </h2>
+            -->
+
+            <button class="btn btn-light">
+                Exemplo 01
+            </button>
+
+            <button 
+                class="btn btn-primary">
+                Enviar
+            </button> 
+             
+            <input type="submit" 
+                    class="btn btn-success" 
+                    value="Salvar"> 
+
+            
+            <a  href="https://luisrodrigonet.github.io"
+                target="_blank" 
+                title="site do papagaio"
+                class="btn btn-danger">
+                Link como botão
+            </a> 
+            <!--
+
+            
+            <button 
+                class="btn btn-outline-primary">
+                Primário Outline
+            </button> 
+        -->
+
+        <a href="#"
+            class="btn btn-outline-success">
+            <i class="bi bi-check-circle"></i> Sucesso
+        </a>
+
+        <div>
+
+            <button type="button" class="btn btn-outline-light text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                info
+            </button>
+        </div>
+        </section>
+        <section id="section1" class="mb-3">
+
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary"> 
+                Botão
+            </button>
+        </div>
+
+
+        </section>
+
+        <section>
+            <table class="table table-striped table-hover align-middle">
+                <!--Head da tabela-->
+                <thead>
+                    <!--Linha-->
+                    <tr class="table-dark">
+                        <th>Imagem do Produto</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <!--Body da tabela-->
+                <tbody>
+                    <!--Linha 1-->
+                    <tr class="table-success">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5RZbPNcBTMfchGXbY1WuisIL3cYw2PQhhXv2l1ATKDg&s=10" width="100" height="100">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>20</td>
+                        <td>
+                            <a href="produto.html" 
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 2-->
+                    <tr class="table-info">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpm3pbbcGIVmVcCIWBseoC1SGUZva8hb7qYDX_mvmDkQ&s" width="100" height="100">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>10</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 3-->
+                    <tr class="table-success">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVWQP-70X8BXHDdOBL1uy7CiwX0Qx1snlCKNTJzFfOA&s" width="100" height="100">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>15</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 4-->
+                    <tr class="table-info">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaYO2OqLezHrb-O2Nlx4u-ZjmWUBOypDxy4RXeIz0VOA&s=10" width="100" height="100">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>10</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 5-->
+                    <tr class="table-success">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                                <img src="https://placehold.co/100x100?text=Tênis\nAdidas">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>12</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 6-->
+                    <tr class="table-info">
+                        <td> 
+                            <a href="produto.html" title="Dados do produto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY26eo6u8exjVwOt5KnkmLlua0NNBA3f602Lc1sZwTA&s" width="100" height="100">
+                            </a>
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>24</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 7-->
+                    <tr class="table-success">
+                        <td>
+                            <a href="produto.html"
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0UVvN-vu0SrjQG45cKmdTFF9pbK63yws41QGQOKqIlA&s=10" width="100" height="100">
+                        </td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>46</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 8-->
+                    <tr class="table-info">
+                        <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9z9QErHS9qZR9_l8qYO-povRsMDHD3sykViCLBsRog&s=10" width="100" height="100"></td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>33</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 9-->
+                    <tr class="table-success">
+                        <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRgzH5427CcL9xxDiCDKOtnXdyTiWUdUASDpCTRPx7jQ&s=10" width="100" height="100"></td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>3</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <!--Linha 10-->
+                    <tr class="table-info">
+                        <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn6kKMkzD-c-iDJ42mQQK6r5gUzp-gqYIkk-umst7gYA&s" width="100" height="100"></td>
+                        <td>Tênis A</td>
+                        <td>R$ 299,90</td>
+                        <td>22</td>
+                        <td>
+                            <a href="produto.html"
+                                class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                             <a href="#" class="btn btn-outline-success btn-sm">
+                                <i class="bi bi-cart2"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Tamanhos</h2>
+
+            <button class="btn btn-primary btn-sm">Pequeno</button> 
+            <button class="btn btn-primary btn-lg">Grande</button> 
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary">Botão Bloco</button>
+            </div> 
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Estados</h2>
+
+            <button class="btn btn-primary active">Ativo</button>
+            <button class="btn btn-secondary" disabled>Desabilitado</button>
+            <a href="#" class="btn btn-danger disabled" aria-disabled="true">Link Desabilitado</a>
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Ícones</h2>
+
+            <button class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Sucesso
+            </button>
+
+            <button class="btn btn-warning">
+                Aviso <i class="bi bi-exclamation-triangle ms-2"></i>
+            </button>
+
+            <button class="btn btn-danger rounded-circle p-2">
+                <i class="bi bi-trash"></i>
+            </button>
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Grupos</h2>
+
+            <div class="btn-group">
+                <button class="btn btn-primary">Esquerda</button>
+                <button class="btn btn-primary">Centro</button>
+                <button class="btn btn-primary">Direita</button>
+            </div>
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Barra de Ferramentas</h2>
+
+            <div class="btn-toolbar">
+                <div class="btn-group me-2">
+                  <button class="btn btn-secondary">1</button>
+                  <button class="btn btn-secondary">2</button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-info"><i class="bi bi-pencil"></i></button>
+                  <button class="btn btn-info"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Botões- Personalizados</h2>
+
+            <button class="btn btn-primary bg-gradient">Gradiente</button>
+            <button class="btn btn-success shadow-lg rounded-pill">Pílula com Sombra</button>
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i> Botões - com Dropdown</h2>
+
+
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                </ul>
+            </div>
+
+
+        </section>
+        -->
+
+        <!-- 
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i> Botões - barra de ferramentas</h2>
+
+            <div class="btn-toolbar mb-3">
+                <div class="btn-group me-2">
+                <button class="btn btn-outline-primary"><i class="bi bi-pencil"></i> Editar</button>
+                <button class="btn btn-outline-danger"><i class="bi bi-trash"></i> Excluir</button>
+                </div>
+                <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="bi bi-gear"></i> Opções
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Exportar</a></li>
+                    <li><a class="dropdown-item" href="#">Importar</a></li>
+                </ul>
+                </div>
+            </div>
+
+
+        </section>
+        -->
+
+    </main>
+
+    <!-- Rodapé 
+    <footer id="footer" class="container text-center bg-light m-4 p-3">
+        <p class="text-muted">
+            <i class="far fa-copyright icon"></i> 
+            2025 - Todos os direitos reservados.
+        </p>
+    </footer>
+    -->
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
