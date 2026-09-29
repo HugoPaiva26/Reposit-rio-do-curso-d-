@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[MUDAR]</title>
+    <meta name="description" 
+        content="[MUDAR].">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        rel="stylesheet" >
+
+
+    <!-- Estilos personalizados (opcional) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .adicionar_borda {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+    </style>
+
+
+
+</head>
+<!--Final head-->
+
+<body class="bg-secondary">
+<!--
+    Div principal    
+    Área principal do site contém
+        -header
+        -main
+        -footer
+-->
+<div id="div_principal" class="container adicionar_borda bg-light">
+    <!--
+        header da página
+        [-] Logotipo
+        [-] Título
+        [-] Menu Principal
+        [-] Login / Logout / Criar conta
+
+    -->
+    <header class="adicionar_borda">
+        <div class="row">
+            <div class="col 12">
+                Logo / Título
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col 9">
+                Menu Principal
+            </div>
+
+            <div class="col 3">
+                Login / Logout /Cadastrar
+            </div>
+        </div>
+    </header>
+    <!--
+        main da página
+    -->
+    <main class="adicionar_borda">
+        <!--Formulário de cadastro-->
+        <form action="cadastro/" method="get" target="_blank">
+            
+            <!--Nome Completo-->
+            <div class="m-3">
+                <label class="form-label"
+                    for="nome">Nome completo:</label>
+                <input class="form-control"
+                    type="text" id="nome" name="nome"
+                    required placeholder="Informar nome completo"
+                    title="Nome completo (obrigatório)">
+            </div>
+
+            <!--Email-->
+            <div class="m-3">
+                <label class="form-label"
+                    for="email">Email:</label>
+                <input class="form-control"
+                    type="email" id="email" name="email"
+                    required placeholder="Adicionar Email"> 
+            </div>
+            <div class="m-3">
+                <!--Senha-->
+                <label form-label 
+                    for="senha">Senha:</label>
+                <input class="form-control" 
+                    type="password" id="senha" name="senha"
+                    required minlength="6" 
+                    placeholder="Criar senha"
+                    title="Pelo menos 6 caracteres">
+            </div>
+
+            <div class="m-3">
+                <!--Confirmar site-->
+                <label form label
+                    for="confirm_senha">Confirmar senha:</label>
+                <input class="form-control"
+                    type="password" id="confirm_senha" name="senha"
+                    required minlength="6" 
+                    placeholder="Confirmar senha"
+                    title="Confirme sua senha"> 
+            </div>
+            
+            <div class="m-3">
+                <!--CPF-->
+                <label form-label
+                    for="cpf">CPF:</label>
+                <input class="form-control"
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    required
+                    placeholder="000.000.000-00"
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                    title="Formato: 000.000.000-00"> 
+            </div>
+
+            <div class="m-3">
+                <!--telefone-->
+                <label form-label
+                    for="telefone">Telefone:</label>
+                <input class="form-control"
+                    type="tel" 
+                    id="telefone" 
+                    name="telefone" 
+                    required
+                    placeholder="(xx) xxxx-xxxx" 
+                    pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" 
+                    title="Formato: (00) 0000-0000"> 
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="form-control btn btn-outline-danger">Limpar:</button>
+                </div>
+                <div class="col-6">
+                    <button type="reset" class="form-control btn btn-outline-success">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!--
+        footer da página
+        [-] Menu secundário
+        [-] Contato
+        [-] Copyright do site
+        [-] Redes sociais
+
+    -->
+    <footer class="adicionar_borda">
+        <div class="row ">
+            <div class="col 4">
+                Menu secundário
+            </div>
+            
+            <div class="col 5">
+                Contrato <br>
+                Copyright
+            </div>
+
+            <!--Redes sociais Instagram, Facebook, Github, Youtube-->
+            <div class="col 3">
+                <a href="https://instagram.com/usuario" target="_blank" title="Acesse nosso Instagram">
+                    <i class="bi bi-instagram"></i></a><br>
+                <a href="https://facebook.com/usuario" target="_blank" title="Acesse nosso Facebook">
+                    <i class="bi bi-github"></i></a><br>
+                <a href="https://github.com/usuario" target="_blank" title="Acesse nosso GitHub">
+                    <i class="bi bi-facebook"></i></a><br>
+                <a href="https://youtube.com/usuario" target="_blank" title="Acesse nosso Youtube">
+                    <i class="bi bi-youtube"></i></a><br>
+            </div>
+        </div>
+
+    </footer>
+
+
+</div>
+<!--Final div principal-->
+
+<!--Não apague a tag script-->
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">       
+</script>
+</body>
+</html>
