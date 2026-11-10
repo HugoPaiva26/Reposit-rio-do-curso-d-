@@ -1,0 +1,14 @@
+{# paginas/templates/paginas/home.html #}
+
+{% extends "_base.html" %}
+
+{% block title %}{{ titulo }} | Meu Projeto Django{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-3">Bem-vindo à {{ titulo }}</h1>
+    <p class="lead">
+        Este é o ponto de partida do nosso projeto Django.
+    </p>
+</div>
+{% endblock content %}
