@@ -1,0 +1,80 @@
+{# templates/receitas/lista.html #}
+
+{% extends "_base.html" %}
+
+{% block title %}
+  Receitas
+{% endblock %}
+
+{% block content %}
+  <div class="container my-5">
+
+    <h1 class="mb-4">📖 Receitas</h1>
+
+    {% if receitas %}
+      <div class="row">
+        {% for receita in receitas %}
+          <!-- Coluna e Card da receita --> 
+          <div class="col-md-4 mb-4">
+            <!-- Card da receita -->
+            <div class="card h-100">
+
+              <!-- Card Header -->
+              <div class="card-header">
+                <img src="https://dummyimage.com/300x180/000/ffffff.png&text=Receitas">
+              </div>
+              <!--//Card Header -->
+
+              <!-- Card Body -->
+              <div class="card-body">
+                <h2 class="h5 mb-1">{{ receita.titulo }}</h2>
+                <small class="text-muted">
+                  ⏱️ {{ receita.tempo_preparo }} minutos
+                  &nbsp;|&nbsp;
+                  📅 {{ receita.data_publicacao|date:"d/m/Y" }}
+                </small>
+              </div>
+              <!--//Card Body -->
+
+              <!-- Card Footer -->
+              <div class="card-footer">
+                <a
+                  href="{# % url 'receitas:detalhe_receita' receita.pk % #}"
+                  class="btn btn-primary"
+                >
+                  Exibir
+                </a>
+              </div>
+              <!--//Card Footer-->
+            </div>          
+          </div>
+          <!-- Coluna e Card da receita --> 
+        {% endfor %}
+
+      </div>
+      <!-- 
+      <div class="list-group">
+        {% for receita in receitas %}
+          <a
+            href="{#% url 'receitas:detalhe_receita' receita.pk %#}"
+            class="list-group-item list-group-item-action"
+          >
+            <h2 class="h5 mb-1">{{ receita.titulo }}</h2>
+
+            <small class="text-muted">
+              ⏱️ {{ receita.tempo_preparo }} minutos
+              &nbsp;|&nbsp;
+              📅 {{ receita.data_publicacao|date:"d/m/Y" }}
+            </small>
+          </a>
+        {% endfor %}
+      </div>
+      -->
+    {% else %}
+      <div class="alert alert-info">
+        😋 Ainda não há receitas publicadas.
+      </div>
+    {% endif %}
+
+  </div>
+{% endblock %}

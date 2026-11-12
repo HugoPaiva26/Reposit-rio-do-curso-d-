@@ -1,0 +1,63 @@
+{# templates/receitas/detalhe.html #}
+
+{% extends "_base.html" %}
+
+{% block title %}
+  {{ receita.titulo }}
+{% endblock %}
+
+{% block content %}
+  <div class="container my-5">
+
+    <h1 class="mb-3 text-primary">
+      {{ receita.titulo }}
+    </h1>
+
+    <hr>
+
+    <p class="text-muted">
+      ⏱️ Tempo de preparo:
+      <strong>{{ receita.tempo_preparo }} minutos</strong>
+
+      &nbsp;|&nbsp;
+
+      👩‍🍳 Por:
+      <strong>{{ receita.autor.get_full_name|default:receita.autor.username }}</strong>
+    </p>
+
+    {% if receita.categorias.all %}
+      <p>
+        <strong>🏷️ Categorias:</strong>
+
+        {% for categoria in receita.categorias.all %}
+          <span class="badge bg-secondary">
+            {{ categoria.nome }}
+          </span>
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h2 class="h4 text-secondary">🧂 Ingredientes</h2>
+
+        {# Converte quebras de linha do TextField em <br> #}
+        <p>{{ receita.ingredientes|linebreaksbr }}</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="h4 text-secondary">👨‍🍳 Modo de preparo</h2>
+
+        <p>{{ receita.modo_preparo|linebreaksbr }}</p>
+      </div>
+    </div>
+
+    <a
+      href="{% url 'receitas:listar_receitas' %}"
+      class="btn btn-outline-primary mt-4"
+    >
+      ← Voltar para a lista
+    </a>
+
+  </div>
+{% endblock %}

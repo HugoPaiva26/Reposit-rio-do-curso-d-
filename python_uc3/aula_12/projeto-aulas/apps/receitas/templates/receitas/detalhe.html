@@ -1,0 +1,32 @@
+{# templates/receitas/detalhe.html #}
+
+{% extends "_base.html" %}
+
+{% block title %}
+  {{ receita.titulo }}
+{% endblock %}
+
+{% block content %}
+  <div class="container my-5">
+
+    <ul>
+      <li> {{ receita.titulo }} 
+      <li> {{ receita.tempo_preparo }} minutos </li>
+      <li> {{ receita.autor.get_full_name|default:receita.autor.username }} </li>
+      <li> {{ receita.ingredientes|linebreaksbr }} </li>
+      <li> {{ receita.modo_preparo|linebreaksbr }} </li>
+      <li>     
+          <a href="{% url 'receitas:listar_receitas' %}">
+            ← Voltar para a lista
+         </a>
+    </ul>   
+
+
+
+
+
+
+
+
+  </div>
+{% endblock %}
