@@ -1,0 +1,83 @@
+
+[
+    {
+        "nome": "Esportivo",
+        "descricao": "Produtos destinados à prática de esportes, atividades físicas e exercícios."
+    },
+    {
+        "nome": "Casual",
+        "descricao": "Produtos para uso cotidiano, com conforto e estilo informal."
+    },
+    {
+        "nome": "Social",
+        "descricao": "Produtos destinados a ocasiões formais, eventos e ambientes profissionais."
+    },
+    {
+        "nome": "Executivo",
+        "descricao": "Produtos voltados ao ambiente corporativo e profissional."
+    },
+    {
+        "nome": "Praia",
+        "descricao": "Produtos destinados ao lazer, praia, piscina e atividades aquáticas."
+    },
+    {
+        "nome": "Fitness",
+        "descricao": "Produtos destinados a academias, musculação e treinamento físico."
+    },
+    {
+        "nome": "Infantil",
+        "descricao": "Produtos desenvolvidos para crianças."
+    },
+    {
+        "nome": "Masculino",
+        "descricao": "Produtos destinados ao público masculino."
+    },
+    {
+        "nome": "Feminino",
+        "descricao": "Produtos destinados ao público feminino."
+    },
+    {
+        "nome": "Unissex",
+        "descricao": "Produtos desenvolvidos para utilização por qualquer gênero."
+    },
+    {
+        "nome": "Inverno",
+        "descricao": "Produtos indicados para temperaturas baixas e estações frias."
+    },
+    {
+        "nome": "Verão",
+        "descricao": "Produtos indicados para temperaturas elevadas e estações quentes."
+    },
+    {
+        "nome": "Acessórios",
+        "descricao": "Produtos complementares, como bolsas, cintos, carteiras e acessórios diversos."
+    },
+    {
+        "nome": "Calçados",
+        "descricao": "Produtos destinados à proteção e ao conforto dos pés."
+    },
+    {
+        "nome": "Trabalho",
+        "descricao": "Produtos destinados ao uso profissional e atividades de trabalho."
+    },
+    {
+        "nome": "Outdoor",
+        "descricao": "Produtos destinados a atividades ao ar livre, trilhas e aventuras."
+    },
+    {
+        "nome": "Moda Praia",
+        "descricao": "Produtos relacionados à moda e vestuário para praia e piscina."
+    },
+    {
+        "nome": "Streetwear",
+        "descricao": "Produtos inspirados na moda urbana e na cultura de rua."
+    },
+    {
+        "nome": "Premium",
+        "descricao": "Produtos de padrão superior, com materiais e acabamentos diferenciados."
+    },
+    {
+        "nome": "Fitness Casual",
+        "descricao": "Produtos que combinam características esportivas com vestuário casual."
+    }
+]

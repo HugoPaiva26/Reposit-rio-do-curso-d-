@@ -1,0 +1,143 @@
+
+[
+    {
+        "categoria": "Esportivo",
+        "nome": "Tênis Running Pro",
+        "descricao": "Tênis esportivo desenvolvido para corrida, com amortecimento e excelente estabilidade.",
+        "preco": "349.90",
+        "quantidade_estoque": 25
+    },
+    {
+        "categoria": "Casual",
+        "nome": "Tênis Casual Urban",
+        "descricao": "Tênis casual confortável para utilização no dia a dia.",
+        "preco": "219.90",
+        "quantidade_estoque": 30
+    },
+    {
+        "categoria": "Social",
+        "nome": "Sapato Social Oxford",
+        "descricao": "Sapato social masculino em couro sintético, ideal para eventos formais.",
+        "preco": "289.90",
+        "quantidade_estoque": 15
+    },
+    {
+        "categoria": "Executivo",
+        "nome": "Sapato Executivo Premium",
+        "descricao": "Sapato elegante para ambientes corporativos e profissionais.",
+        "preco": "399.90",
+        "quantidade_estoque": 12
+    },
+    {
+        "categoria": "Praia",
+        "nome": "Sandália Praia Comfort",
+        "descricao": "Sandália leve e confortável para utilização na praia e piscina.",
+        "preco": "79.90",
+        "quantidade_estoque": 40
+    },
+    {
+        "categoria": "Fitness",
+        "nome": "Tênis Fitness Training",
+        "descricao": "Tênis desenvolvido para musculação, academia e treinamento funcional.",
+        "preco": "279.90",
+        "quantidade_estoque": 20
+    },
+    {
+        "categoria": "Infantil",
+        "nome": "Tênis Infantil Color",
+        "descricao": "Tênis infantil confortável, resistente e com design colorido.",
+        "preco": "129.90",
+        "quantidade_estoque": 35
+    },
+    {
+        "categoria": "Masculino",
+        "nome": "Tênis Masculino Classic",
+        "descricao": "Tênis masculino de estilo clássico para utilização cotidiana.",
+        "preco": "199.90",
+        "quantidade_estoque": 28
+    },
+    {
+        "categoria": "Feminino",
+        "nome": "Sapatilha Feminina Elegance",
+        "descricao": "Sapatilha feminina confortável e elegante para diversas ocasiões.",
+        "preco": "149.90",
+        "quantidade_estoque": 22
+    },
+    {
+        "categoria": "Unissex",
+        "nome": "Tênis Unissex Basic",
+        "descricao": "Tênis versátil com design minimalista para todos os estilos.",
+        "preco": "189.90",
+        "quantidade_estoque": 32
+    },
+    {
+        "categoria": "Inverno",
+        "nome": "Bota Winter Classic",
+        "descricao": "Bota desenvolvida para proporcionar conforto e proteção em dias frios.",
+        "preco": "329.90",
+        "quantidade_estoque": 18
+    },
+    {
+        "categoria": "Verão",
+        "nome": "Sandália Summer Fresh",
+        "descricao": "Sandália leve e arejada, ideal para os dias quentes de verão.",
+        "preco": "99.90",
+        "quantidade_estoque": 38
+    },
+    {
+        "categoria": "Acessórios",
+        "nome": "Palmilha Comfort Gel",
+        "descricao": "Palmilha anatômica em gel para proporcionar maior conforto aos pés.",
+        "preco": "39.90",
+        "quantidade_estoque": 50
+    },
+    {
+        "categoria": "Calçados",
+        "nome": "Tênis Street Classic",
+        "descricao": "Calçado versátil para utilização em diferentes ocasiões.",
+        "preco": "239.90",
+        "quantidade_estoque": 24
+    },
+    {
+        "categoria": "Trabalho",
+        "nome": "Sapato Work Safety",
+        "descricao": "Calçado profissional resistente e confortável para ambientes de trabalho.",
+        "preco": "259.90",
+        "quantidade_estoque": 16
+    },
+    {
+        "categoria": "Outdoor",
+        "nome": "Bota Adventure Trekking",
+        "descricao": "Bota resistente para trilhas, caminhadas e atividades ao ar livre.",
+        "preco": "459.90",
+        "quantidade_estoque": 14
+    },
+    {
+        "categoria": "Moda Praia",
+        "nome": "Chinelo Beach Style",
+        "descricao": "Chinelo moderno e confortável para praia, piscina e lazer.",
+        "preco": "59.90",
+        "quantidade_estoque": 45
+    },
+    {
+        "categoria": "Streetwear",
+        "nome": "Tênis Streetwear Bold",
+        "descricao": "Tênis inspirado na moda urbana, com design moderno e marcante.",
+        "preco": "319.90",
+        "quantidade_estoque": 19
+    },
+    {
+        "categoria": "Premium",
+        "nome": "Tênis Premium Leather",
+        "descricao": "Tênis premium com acabamento sofisticado e materiais de alta qualidade.",
+        "preco": "599.90",
+        "quantidade_estoque": 10
+    },
+    {
+        "categoria": "Fitness Casual",
+        "nome": "Tênis Sport Lifestyle",
+        "descricao": "Tênis que combina conforto esportivo com estilo casual para o cotidiano.",
+        "preco": "269.90",
+        "quantidade_estoque": 21
+    }
+]
